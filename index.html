@@ -1,0 +1,108 @@
+ <html>
+<body bgcolor="black">
+<head><h1><center><img src="C:\Users\Home\Desktop\remote lab\images\dsce.jpg" height="150" width="150"></center>
+    <center><font color="yellow">DAYANANDA SAGAR COLLEGE OF ENGINEERING </h1></center></font>
+<h2> <font color="white"><center>REMOTE LABORATORY LOGIN </h2></font></center>
+<i><marquee><h3><font color="white"> Explore        Learn      &      Evaluate  !!! </h3></marquee></i></font>
+       <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+      <center>
+
+           <form action = "login.php" method = "POST">
+           <div class="imgcontainer">
+    <img src="C:\Users\Home\Desktop\abc.png" alt="Avatar" class="avatar">
+  </div>
+
+             <font size="5" color="white"> Username:  <input type="text" name="username"></font> <br><br>
+           <font size="5" color="white">  Password: <input type="password" name="password"> <br ><br></font>
+
+         
+
+
+           </form>
+
+      </center>
+
+</body>
+</html>
+
+    <?php
+
+       require('connect.php');
+
+       $username = $suyash;
+       $password = $1234;
+
+   if(isset('Student Login))
+   {
+   if($suyash && $1234)
+   {
+           $check = mysql_query("SELECT * FROM users WHERE username='".$username."' AND password= '".$password."'");
+           $rows = mysql_num_rows($check);
+
+
+         if(mysql_num_rows($check)!=0)
+         {
+             echo "Successful login.";
+         }
+         else
+         {
+            echo "Couldn't find username.";
+
+         }
+      }
+      else
+      {
+         echo "Please fill all the fields.";
+      }
+   }
+ >
+
+         <html>
+          <head>
+                 <title>e-Statistics</title>
+           <style>
+           .body{
+              margin: 0;
+
+            }
+
+           .nav{
+             width: 115%;
+             height:40px;
+             background:black;
+             text-align:center;
+           }
+          .nav ul{
+             width: 800px;
+             margin:0 auto;
+             padding:0;
+             }
+            .nav ul li{
+               list-style: none;
+
+            }
+           .nav ul li a{
+               float: left;
+               text-decoration:none;
+               display:block;
+               padding:10px 40px;
+               color:#ff9933 ;
+               border-right:1px solid #ccc;
+             }
+            .nav ul li a:hover{
+                color:white;
+
+            }
+           </style>
+      </head>
+    <body>
+
+       <div class="nav">
+         <ul>
+                <li><a href="file:///C:/Users/Home/Desktop/remote%20lab/index.html">Student Login</a></li>
+              <li><a href="">Principal</a></li>
+               <li><a href="">Academic Director</a></li>
+               <li><a href="">Lecturer</a></li></font>
+
